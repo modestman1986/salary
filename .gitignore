@@ -2,3 +2,4 @@ vendor/
 composer.lock
 config.ini
 *.bak
+sql/
