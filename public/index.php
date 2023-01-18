@@ -7,7 +7,7 @@ require __DIR__ . '/../vendor/autoload.php';
 $router = new AltoRouter();
 
 // Route vers la page d'accueil
-//$router->map('GET','/',['controller' => 'MainController','method' => 'homeAction',],'home');
+$router->map('GET','/',['controller' => 'MainController','method' => 'homeAction',],'home');
 
 // Route vers la page des créateur de Sonic
 //$router->map('GET','/createurs',['controller' => 'MainController','method' => 'creatorsAction',],'creators');

@@ -15,10 +15,17 @@
 
 <body>
     <div id="wrapper">
-        <header class="">
-            <nav class="navbar fixed-top navbar-light bg-light text-capitalize">
-                <img src="<?= $absoluteURL ?>/assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-                Association des musulmans d'Aubervilliers
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href=""><img src="<?= $absoluteURL ?>/assets/images/logo.png" width="60" height="60" class="d-inline-block align-top" alt="" loading="lazy"></a>
+                </div>
+                <h1><a href="">Association des musulmans d'Aubervilliers</a></h1>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Salariés</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
             </nav>
         </header>
         <main>

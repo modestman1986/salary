@@ -3,21 +3,28 @@
 namespace Salary\Controllers;
 
 use Salary\Models\EmployeeModel;
+use Salary\Models\ContractModel;
+
 
 class MainController 
 {
     public function homeAction()
     {
-        
-    }
+        $contractModel = new ContractModel();
+        $contracts = $contractModel->getAllContracts();
 
-
-    public function testAction()
-    {
         $employeeModel = new EmployeeModel();
         $employees = $employeeModel->getAllEmployees(); 
-        $this->showViews('employees', [$employees]);
+
+        $this->showViews('employees', [$employees, $contracts]);
     }
+
+
+   /*  public function testAction()
+    {
+        
+        
+    } */
    
     public function showViews($viewName, $dataArray = [])
     {

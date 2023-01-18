@@ -1,43 +1,43 @@
 <?php
-echo '';
+/* dump($dataArray); */
 
 ?>
-<h1 class="text-center text-uppercase pt-5">Liste des employés</h1>
-<table class="table table-striped table-dark">
+<h2>Liste des employés</h2>
+<table>
     <thead>
-        <tr class="text-center">
-            <th scope="col">ID</th>
-            <th scope="col">Prénom</th>
-            <th scope="col">Nom</th>
-            <th scope="col">Genre</th>
-            <th scope="col">Date de naissance</th>
-            <th scope="col">N° Séc. Sociale</th>
-            <th scope="col">Nationalité</th>
-            <th scope="col">Pays de naissance</th>
-            <th scope="col">Email</th>
-            <th scope="col">Téléphone</th>
-            <th scope="col">Adresse</th>
-            <th scope="col">Navigo</th>
-            <th scope="col">Type de contrat</th>
+        <tr>
+            <th>ID</th>
+            <th>Prénom</th>
+            <th>Nom</th>
+            <th>Genre</th>
+            <th>Date de naissance</th>
+            <th>N° Séc. Sociale</th>
+            <th>Nationalité</th>
+            <th>Pays de naissance</th>
+            <th>Email</th>
+            <th>Téléphone</th>
+            <th>Adresse</th>
+            <th>Navigo</th>
+            <th>Type de contrat</th>
         </tr>
     </thead>
     <tbody>
         <?php foreach ($dataArray[0] as $employee) :
         ?>
-            <tr class="text-center">
-                <th scope="col"><?= $employee['id']?></th>
-                <th scope="col"><?= $employee['firstname']?></th>
-                <th scope="col"><?= $employee['lastname']?></th>
-                <th scope="col"><?= $employee['gender']?></th>
-                <th scope="col"><?= $employee['birthday']?></th>
-                <th scope="col"><?= $employee['num_security']?></th>
-                <th scope="col"><?= $employee['nationality']?></th>
-                <th scope="col"><?= $employee['birth_country']?></th>
-                <th scope="col"><?= $employee['email']?></th>
-                <th scope="col"><?= $employee['phone']?></th>
-                <th scope="col"><?= $employee['adress']?></th>
-                <th scope="col"><?= $employee['navigo']?></th>
-                <th scope="col"><?= $employee['contract_id']?></th>
+            <tr>
+                <th><?= $employee['id']?></th>
+                <th><?= $employee['firstname']?></th>
+                <th><?= $employee['lastname']?></th>
+                <th><?= $employee['gender']?></th>
+                <th><?= $employee['birthday']?></th>
+                <th><?= $employee['num_security']?></th>
+                <th><?= $employee['nationality']?></th>
+                <th><?= $employee['birth_country']?></th>
+                <th><?= $employee['email']?></th>
+                <th><?= $employee['phone']?></th>
+                <th><?= $employee['adress']?></th>
+                <th><?= $employee['navigo']?></th>
+                <th><?= $dataArray[1][$employee['contract_id']]?></th>
             </tr>
         <?php endforeach;
         ?>

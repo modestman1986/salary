@@ -2,6 +2,9 @@
 
 namespace Salary\Models;
 
+use Salary\Utils\Database;
+use \PDO;
+
 class ContractModel
 {
     private $id;
@@ -9,6 +12,20 @@ class ContractModel
     private $end_date;
     private $type;
     private $hourly_volume;
+
+     /**
+     * Datas of all contracts in an array 
+     *
+     * @return Employee[]
+     */
+    public function getAllContracts()
+    {
+        $dbConnection = Database::getPDO();
+        $sql = "SELECT `id`, `type` FROM `contract`;";
+        $pdo = $dbConnection->query($sql);
+        $listOfContracts = $pdo->fetchAll(PDO::FETCH_KEY_PAIR);
+        return $listOfContracts;
+    }
 
     /**
      * Get the value of hourly_volume
