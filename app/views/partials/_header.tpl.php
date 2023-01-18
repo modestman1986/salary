@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <title>Gestion des salariés</title>
 </head>
+
 <body>
     <div id="wrapper">
-        <header>
-            <nav class="navbar fixed-top navbar-light bg-light">
-                <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-                Bootstrap
+        <header class="">
+            <nav class="navbar fixed-top navbar-light bg-light text-capitalize">
+                <img src="<?= $absoluteURL ?>/assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                Association des musulmans d'Aubervilliers
             </nav>
         </header>
         <main>

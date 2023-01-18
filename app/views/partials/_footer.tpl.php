@@ -1,6 +1,6 @@
 </main>
 <footer>
-    <p>Copyright &copy; Sofiane 2023</p>
+    <p class="text-center">Copyright &copy; Sofiane 2023</p>
 </footer>
 </div>
 
