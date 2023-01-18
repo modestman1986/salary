@@ -1,0 +1,11 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Salary\\": "app/"
+        }
+    },
+    "require": {
+        "symfony/var-dumper": "^5.4",
+        "altorouter/altorouter": "^2.0"
+    }
+}
